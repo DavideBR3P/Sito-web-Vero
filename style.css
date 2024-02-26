@@ -1,0 +1,14 @@
+body{ 
+    background: yellow;
+}
+
+p {
+    color: red
+}
+
+h1,h2,h3 { color: green;}
+
+.paragrafo-ev {
+    
+    color:#000
+}
