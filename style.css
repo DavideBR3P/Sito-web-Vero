@@ -1,5 +1,25 @@
 * {box-sizing: border-box;}
+.group:after{content: ""; display: table; clear:both}
 
-header {display: flex; flex-wrap: nowrap;background:lightblue; justify-content: space-between;}
+.contenitore-pagina {background: black; max-width: 1200px; margin:auto}
+
+header {display: flex; 
+    flex-wrap: nowrap;
+    background:lightblue; 
+    justify-content:space-between;
+    padding: 0px 20px
+}
+
+
+nav{display:flex}
+
+.tenda{width: 100px; position: relative}
+.tenda a {color: black; display:block; text-decoration: none; justify-content: center;}
+.tenda-el{height: 50px;padding: 15px }
+.tenda-el:hover{background: gainsboro}
+.tenda:hover {max-height: 500px;}
+
+.logo{height:100%; padding: 5px}
+.logo img{height: 100%}
 
 
