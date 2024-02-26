@@ -1,0 +1,4 @@
+* {box-sizing: border-box;}
+
+
+header {display: flex; flex-wrap: nowrap;background:lightblue; justify-content: space-between;}
