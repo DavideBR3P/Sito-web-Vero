@@ -5,7 +5,8 @@ height: 100%;
 
 .contenitore-pagina {background: black; max-width: 1200px; margin:auto}
 body {background-color: black;
-font-size: 20; 
+font-size: 20;
+color:whitesmoke 
 }
 
 header {display: flex; 
@@ -97,14 +98,14 @@ color: white;
 display: flex;
 cursor: pointer;
 font-size: 2.2rem;
-background: black;
+background: white;
 align-items: center;
 justify-content: center;
 border-radius: 50%;
 transform: translateY(-50%);
 }
 .slider-wrapper .slide-button:hover {
-background: #404040;
+background: whitesmoke;
 }
 .slider-wrapper .slide-button#prev-slide {
 left: -25px;
@@ -128,8 +129,9 @@ display: none;
 }
 .slider-wrapper .image-list .image-item {
 width: 375px;
-height: 400px;
+height: 350px;
 object-fit: cover;
+padding-top: 10px;
 }
 .container .slider-scrollbar {
 height: 24px;
@@ -172,7 +174,65 @@ right: 0;
 top: -10px;
 bottom: -10px;
 }
+.galleria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2px;
+    padding: 2px;
 
+}
+.galleria li{
+    list-style: none;
+
+}
+.galleria img{
+    max-width: 100%;
+
+}
+.card-item{
+    overflow: hidden;
+}
+.card-item a{
+    text-decoration: none;
+}
+.card-item, .card-item a, .card{
+    outline: 2px solid #C29B54;
+    display: flex;
+    flex-direction: column;
+
+}
+.card-item a, .card,  .card img{
+    flex: 1;
+
+}
+.card img{
+    object-fit: cover;
+    transition:  350ms transform ease-in-out;
+}
+.card{
+    position: relative;
+}
+.card figcaption{
+    font-size: 26;
+    color:white;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    transform: scale(0);
+    transition:  350ms transform ease-in-out;
+    padding: 4px 0;
+}
+.card:hover figcaption{
+    transform: scale(1);
+    background-color: rgba(0,0,0,0.55);
+}
+.card:hover img{
+    transform: scale(1.03);
+}
 
 
 
