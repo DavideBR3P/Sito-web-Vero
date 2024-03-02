@@ -3,10 +3,71 @@ html {
 height: 100%;
 }
 
+
 .contenitore-pagina {background: black; max-width: 1200px; margin:auto}
 body {background-color: black;
 font-size: 20;
 color:whitesmoke 
+}
+body h1{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+body h1 span{
+    position: relative;
+}
+
+body h1 span::before{
+    content: "Miei";
+    color: #C29B54;
+    animation: words 20s infinite;
+}
+
+body h1 span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid #C29B54;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(10) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Miei";
+    }
+    21%,40%{
+        content: "Tuoi";
+    }
+    41%,60%{
+        content: "Suoi";
+    }
+    61%,80%{
+        content: "Nostri";
+    }
+    81%,100%{
+        content: "Vostri";
+    }
+    
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
 }
 
 header {display: flex; 
@@ -14,6 +75,8 @@ header {display: flex;
     background: #C29B54 ;
     padding: 10px 10px 10px 15px;
 }
+
+
 .logo{height:60px;padding-top: 7;}
 .logo img{height: 50px}
 
@@ -129,7 +192,7 @@ display: none;
 }
 .slider-wrapper .image-list .image-item {
 width: 375px;
-height: 350px;
+height: 400px;
 object-fit: cover;
 padding-top: 10px;
 }
@@ -199,7 +262,7 @@ bottom: -10px;
     text-decoration: none;
 }
 .card-item, .card-item a, .card{
-    outline: 2px solid #C29B54;
+    
     display: flex;
     flex-direction: column;
 
