@@ -2,6 +2,9 @@
     <head >
         <title>The Wolf of Wall Street</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>    
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
         <div class="contenitore-g">
@@ -11,26 +14,56 @@
                 </div>
 
                 <nav>
-                    <div class="tenda">
-                        <div class="dropdown">
-                            <a href="film.html" class="tenda-el">Film</a>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Film</a>
+                        <div class="dropdown-content">
+                        <a href="#">Film D'azione</a>
+                        <a href="#">Film D'avventura</a>
+                        <a href="#">Film Animati</a>
                         </div>
-                        
-                    </div>
-                    <div class="tenda">
-                        <a href="serie-tv.html" class="tenda-el">Serie Tv</a>
-                    </div>
-                    <div class="tenda">
-                        <a href="attori.html" class="tenda-el">Attori</a>
-                    </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Serie Tv</a>
+                        <div class="dropdown-content">
+                        <a href="#">Serie D'azione</a>
+                        <a href="#">Serie D'avventura</a>
+                        <a href="#">Serie Animate</a>
+                        </div>
+                    </li>
 
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Attori</a>
+                        <div class="dropdown-content">
+                        <a href="#">Italiani</a>
+                        <a href="#">Stranieri</a>
+                        </div>
+                    </li>
                 </nav>
+
             </header>
+
+            <div class="slide">
+                <div class="slider-wrapper">
+                  <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    
+                  </button>
+                  <ul class="image-list">
+                    <img class="image-item" src="immagini/img-1.jpg"  />
+                    <img class="image-item" src="immagini/img-2.jpg"  />
+                    <img class="image-item" src="immagini/img-3.jpg"  />
+                    <img class="image-item" src="immagini/img-4.jpg"  />
+                    <img class="image-item" src="immagini/img-5.jpg"  />
+                  </ul>
+                  <button id="next-slide" class="slide-button material-symbols-rounded">
+                    
+                  </button>
+                </div>
+                <div class="slider-scrollbar">
+                  <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                  </div>
+                </div>
+            </div>
 
             <h1>Le nostre scelte</h1>
             <p>Ecco i film e le serie tv consigliate:</p>
