@@ -1,44 +1,32 @@
 <html>
     <head >
-        <title>The Wolf of Wall Street</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>    
         <meta charset="UTF-8" />
+        <title>The Wolf of Wall Street</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">    
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
         <div class="contenitore-g">
-            <header>
-                <div class="logo">
-                    <img src="logo.png" >
-                </div>
+            <header class="header clearfix">
+                <a href="" class="header_logo"><img src="logo.png"></a>
+                <a href="" class="header_bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
 
-                <nav>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Film</a>
-                        <div class="dropdown-content">
-                        <a href="#">Film D'azione</a>
-                        <a href="#">Film D'avventura</a>
-                        <a href="#">Film Animati</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Serie Tv</a>
-                        <div class="dropdown-content">
-                        <a href="#">Serie D'azione</a>
-                        <a href="#">Serie D'avventura</a>
-                        <a href="#">Serie Animate</a>
-                        </div>
-                    </li>
+                <ul class="header_menu animate">
+                    <li class="header_menu_item"><a href="#">Film</a></li>
+                    <li class="header_menu_item"><a href="#">Serie Tv</a></li>
+                    <li class="header_menu_item"><a href="#">Nuovi Arrivi</a></li>
+                    <li class="header_menu_item"><a href="#">Grandi Classici</a></li>
+                    <li class="header_menu_item"><a href="#">Da non perdere</a></li>
+                    <li class="header_menu_item"><a href="#">Contatti</a></li>
+                </ul>
 
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Attori</a>
-                        <div class="dropdown-content">
-                        <a href="#">Italiani</a>
-                        <a href="#">Stranieri</a>
-                        </div>
-                    </li>
-                </nav>
 
             </header>
 
@@ -120,7 +108,20 @@
 
 
         </div>
-        
 
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".header_bar").click(function(e){
+                $(".header_menu").toggleClass('is-open');
+                e.preventDefault();
+
+            });
+
+        });
+
+    </script>
     </body>
 </html>
