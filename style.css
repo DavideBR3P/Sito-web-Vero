@@ -1,8 +1,10 @@
+* {box-sizing: border-box; font-family:'Courier New', Courier, monospace}
+html {
+height: 100%;
+}
+.contenitore-pagina {background: black; max-width: 1200px; margin:auto}
 .header {
-    
     background: #C29B54 ;
-    
-    
 }
 .header_logo{
     float: left;
@@ -176,7 +178,7 @@ right: -25px;
 }
 .slider-wrapper .image-list {
 display: grid;
-grid-template-columns: repeat(10, 1fr);
+grid-template-columns: repeat(73, 1fr);
 gap: 18px;
 font-size: 0;
 list-style: none;
@@ -189,7 +191,7 @@ display: none;
 }
 .slider-wrapper .image-list .image-item {
 width: 375px;
-height: 400px;
+height: auto;
 object-fit: cover;
 padding-top: 10px;
 }
@@ -202,7 +204,7 @@ align-items: left;
 .slider-scrollbar .scrollbar-track {
 background: #ccc;
 width: 100%;
-height: 2px;
+height: 5px;
 display: flex;
 align-items: center;
 border-radius: 4px;
@@ -297,35 +299,56 @@ bottom: -10px;
 }
 
 
-@media only screen and (max-width: 1023px) {
-.slider-wrapper .slide-button {
-    display: none !important;
-}
-
-.slider-wrapper .image-list {
-    gap: 10px;
-    margin-bottom: 15px;
-    scroll-snap-type: x mandatory;
-}
-
-.slider-wrapper .image-list .image-item {
-    width: 280px;
-    height: 380px;
-}
-
-.slider-scrollbar .scrollbar-thumb {
-    width: 20%;
-}
-}
-
-@media (max-width:998px){
-
-}
-
-@media (max-width:767px){
-    .header_menu{width:100%; height: 0px;overflow: hidden;}
-    .header_menu_item{display: block;}
-    .header_bar{display: block;}
-    .is-open{height: 300px;overflow: auto;}
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .footer {
+    position:relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: #C29B54;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none !important;
+    }
     
-}
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+    
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+    }
+    
+    @media (max-width:998px){
+    
+    }
+    
+    @media (max-width:767px){
+        .header_menu{width:100%; height: 0px;overflow: hidden;}
+        .header_menu_item{display: block;}
+        .header_bar{display: block;}
+        .is-open{height: 300px;overflow: auto;}
+        
+    }
