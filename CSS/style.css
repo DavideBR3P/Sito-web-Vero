@@ -5,7 +5,9 @@ height: 100%;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: american typewriter, serif;
 }
+
 .contenitore-pagina {background: black;  margin:auto; max-width: 1200px;box-sizing: border-box;}
 .header {
     background: black;
